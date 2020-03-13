@@ -1,0 +1,45 @@
+{
+  "name": "react-default-setting",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "eslint-config-airbnb": "^18.0.1",
+    "node-sass": "^4.13.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "react-scripts": "3.4.0"
+  },
+  "scripts": {
+    "start": "react-scripts start cross-env NODE_PATH=src",
+    "build": "react-scripts build cross-env NODE_PATH=src",
+    "test": "react-scripts test cross-env NODE_PATH=src",
+    "eject": "react-scripts eject cross-env NODE_PATH=src"
+  },
+  "eslintConfig": {
+    "extends": [
+      "airbnb",
+      "react-app"
+    ],
+    "rules": {
+      "react/prefer-stateless-function": 0,
+      "react/jsx-filename-extension": 0,
+      "react/jsx-one-expression-per-line": 0
+    }
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
