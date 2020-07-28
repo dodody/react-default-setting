@@ -16,7 +16,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 - 기본 모듈
 
-  > styled-component, react-router-dom, cross-env, node-sass, prop-types
+  > styled-component, react-router-dom, cross-env, node-sass, prop-types, styled-components
+  > eslint : eslint, eslint-config-airbnb
+  > redux : redux, react-redux, redux-actions, redux-pender, redux-thunk
 
 
 - 디렉토리 구조 (수정하기)
