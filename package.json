@@ -19,10 +19,10 @@
     "styled-components": "^5.1.1"
   },
   "scripts": {
-    "start": "react-scripts start cross-env NODE_PATH=src",
-    "build": "react-scripts build cross-env NODE_PATH=src",
-    "test": "react-scripts test cross-env NODE_PATH=src",
-    "eject": "react-scripts eject cross-env NODE_PATH=src"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
@@ -48,7 +48,6 @@
     ]
   },
   "devDependencies": {
-    "eslint": "^7.5.0",
     "eslint-config-airbnb": "^18.2.0"
   }
 }
