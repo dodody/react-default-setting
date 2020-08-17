@@ -1,0 +1,199 @@
+// ==========================================================================
+// Utility Classes
+// - padding, margin, text-align, display, cursor
+// ==========================================================================
+
+// padding & margin
+.no-padding {
+  padding: 0 !important;
+}
+
+.no-margin {
+  margin: 0 !important;
+}
+
+$list-direction: (
+  "t": "top",
+  "r": "right",
+  "b": "bottom",
+  "l": "left",
+);
+$list-size: 0 1 2 3 4 5;
+
+@each $direction-short, $direction in $list-direction {
+  @each $size in $list-size {
+    .p#{$direction-short}-#{$size} {
+      padding-#{$direction}: #{$size}rem !important;
+    }
+    .m#{$direction-short}-#{$size} {
+      margin-#{$direction}: #{$size}rem !important;
+    }
+  }
+}
+
+// Text Align
+.left-align {
+  text-align: left;
+}
+.right-align {
+  text-align: right;
+}
+.center, .center-align {
+  text-align: center;
+}
+@media #{$phone-and-down} {
+  .left-align-phone {
+    text-align: left;
+  }
+}
+
+.center-vertical {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+// Display
+.none {
+  display: none !important;
+}
+.inline-block {
+  display: inline-block !important;
+}
+.block {
+  display: block !important;
+}
+.flex {
+  display: flex;
+}
+.inline-flex {
+  display: inline-flex;
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-col-reverse {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+// display - float
+.left {
+  float: left !important;
+}
+.right {
+  float: right !important;
+}
+
+// display - flex
+.flex--center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex--justify-between {
+  justify-content: space-between;
+}
+.flex--justify-center {
+  justify-content: center;
+}
+.flex--align-baseline {
+  align-items: baseline;
+}
+.flex--align-start {
+  align-items: start;
+}
+.flex--align-center {
+  align-items: center;
+}
+.flex--align-end {
+  align-items: end;
+}
+.flex--grow-1 {
+  flex-grow: 1;
+}
+.flex--wrap {
+  flex-wrap: wrap;
+}
+
+// vertical align
+.verti{
+  &.middle{
+    vertical-align: middle;
+  }
+  &.unset{
+    vertical-align: unset;
+  }
+}
+
+// position
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+.absolute--center-x {
+  width: fit-content;
+  right: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+.absolute--center-y {
+  height: fit-content;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+// Cursor
+.pointer {
+  cursor: pointer;
+}
+.help {
+  cursor: help;
+}
+.no-drag{
+  user-select: none;
+}
+
+// width, height
+.width-inherit{
+  width: inherit;
+}
+.width-50 {
+  width: 50%;
+}
+.width-100 {
+  width: 100% !important;
+}
+.height-100 {
+  height: 100%;
+}
+
+// overflow
+.overflow-hidden{
+  overflow: hidden;
+}
+
+.color-link{
+  color: #554ae6;
+  transition: 0.2s ease;
+  &:hover{
+    text-decoration: underline;
+    color: #271db1;
+    // background-color: #f9f9f9;
+  }
+}
+
+// .gray-link{
+//   color: #857bff;
+//   text-decoration: underline;
+//   transition: 0.2s ease;
+//   &:hover{
+//     color: #554ae6;
+//   }
+// }

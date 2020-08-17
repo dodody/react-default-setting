@@ -1,0 +1,83 @@
+// 1. Fonts
+// ==========================================================================
+
+$base-font-size: 16px !default;
+$base-font-family: 'Spoqa Han Sans', '나눔고딕', NanumGothic, '맑은 고딕', Malgun Gothic, '애플 SD 산돌고딕 Neo', Apple SD Gothic Neo, '돋움', Dotum, '굴림', Gulim, Helvetica, sans-serif !default;
+$code-font-family:  Menlo, Monaco, 'Courier New', monospace !important;
+$base-font-color: #333 !default;
+
+// 2. Grid
+// ==========================================================================
+
+// wrt #columns
+// phone: 4, tablet: 8, desktop: 12
+// phone: 0~479 / tablet: 480~839 / desktop : 840~
+
+// 840dp가 특정 컴포넌트를 표현하는데 너무 작은 경우,(예를 들어 navbar)
+// desktop size를 medium, large로 세분화 하여 사용할 수 있음
+// medium : 840~1023 / large : 1024 ~
+
+$phone-screen : 479px !default;
+$phone-screen-up : 480px !default;
+
+$tablet-screen : 839px !default;
+$tablet-screen-up : 840px !default;
+
+$desktop-screen : 1023px !default;
+$desktop-screen-up : 1024px !default;
+
+
+$tablet-and-up : "only screen and (min-width: #{$phone-screen-up})" !default;
+$small-desktop-and-up : "only screen and (min-width: #{$tablet-screen-up})" !default;
+$large-desktop-and-up: "only screen and (min-width: #{$desktop-screen-up})" !default;
+
+$phone-and-down : "only screen and (max-width : #{$phone-screen})" !default;
+$tablet-and-down: "only screen and (max-width : #{$tablet-screen})" !default;
+$large-desktop-and-down: "only screen and (max-width : #{$desktop-screen})" !default;
+
+$tablet-only : "only screen and (min-width : #{$phone-screen-up}) and (max-width: #{$tablet-screen})" !default;
+
+$devices: (
+  "phone": $phone-and-down,
+  "tablet": $tablet-only,
+  "desktop": $small-desktop-and-up,
+);
+
+// 3. Typography
+// ==========================================================================
+
+// Header Styles
+// h1 96px / h2 60px / h3 48px / h4 34px / h5 24px / h6 20px
+$h1-fontsize: 6rem !default;
+$h2-fontsize: 3.75rem !default;
+$h3-fontsize: 3rem !default;
+$h4-fontsize: 2.125rem !default;
+$h5-fontsize: 1.5rem !default;
+$h6-fontsize: 1.25rem !default;
+
+// SubTitle Styles
+// subtitle1 16px / subtitle2 14px
+$subtitle1-fontsize : 1rem !default;
+$subtitle2-fontsize : 0.875rem !default;
+
+// Body Styles
+// body1 16px / body2 14px
+$body-typo1-fontsize : 1rem !default;
+$body-typo2-fontsize : 0.875rem !default;
+
+// button Styles
+// button 14px
+$button-typo-fontsize : 0.875rem !default;
+
+// caption Styles
+// caption 12px
+$caption-typo-fontsize : 0.75rem !default;
+
+// 4. Top Navbar
+// ==========================================================================
+$toolbar-height: 111px;
+$toolbar-phone-height: 111px;
+
+// 5. Footer
+// ==========================================================================
+$simple-footer-size: 27.5px;

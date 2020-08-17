@@ -1,0 +1,18 @@
+.mdc-top-app-bar{
+  background: repeating-linear-gradient(-45deg, #111, #222 6px, #222 0, #222 4px);
+  height: 40px;
+}
+.mdc-top-app-bar__row{
+  height: 40px;
+}
+.mdc-top-app-bar__section{
+  height: 40px;
+  padding: 0px 12px !important;
+}
+.mdc-top-app-bar--fixed-adjust{
+  padding-top: 40px !important;
+}
+
+.mdc-drawer{
+  background-color: rgba(0,0,0,0) !important;
+}
